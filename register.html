@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="bg-[#FEAF00]">
+  <body class="bg-[#FEAF00]">
+    <form class="w-[475px] h-[530px] bg-white mx-auto mt-[30px] rounded-[20px] flex flex-col">
+      <h1 class="cursor-pointer leading-[24.38px] ml-[37px] font-bold mx-auto mt-[44px] text-[32px] flex items-center border-l-[4px] pl-[12.5px] border-[#f7d343]">
+        Admin Students
+    </h1>
+      <h2 class="text-center text-[22px] leading-[26.82px] font-semibold text-[#000000] pt-[43px]">SIGN UP</h2>
+      <p class="text-center pt-[9px] font-normal text-[14px] text-[#6C6C6C]">Enter your credentials to access your account</p>
+      <label class="flex flex-col px-[30px] py-[25px] gap-[19px]">
+          <span class="font-medium text-[14px] text-[#6C6C6C]">Enter new login</span>
+          <input class="w-full py-[8px] pl-[5px] border-[2px] rounded-[4px]" type="text" placeholder="Enter your login" autocomplete="off" name="Login">
+          <span class="font-medium text-[14px] text-[#6C6C6C]">Create new password</span>
+          <input class="w-full py-[8px] pl-[5px] border-[2px] rounded-[4px]" type="password" required placeholder="Enter your password" autocomplete="off" name="password">
+      </label>
+      <button class=" w-[415px] text-center p-[14px] mb-[11px] rounded-[4px] mx-auto [14px] bg-[#FEAF00] font-normal text-white">SIGN IN</button>
+  </form>
+     <script src="./js/register.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>

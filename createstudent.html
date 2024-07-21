@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Students</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+</head>
+<body class="overflow-hidden">
+   <div class="flex justify-between">
+    <nav class="w-[28%] h-[100vh] bg-[#F2EAE1]">
+      <div class="p-5 text-center">
+        <span class=""></span>
+        <h3 class="text-[20px] font-bold text-center pl-[25px] pt-[18px] mb-[54px] h-[2px] border-l-[2px] border-orange-400">Admin Students</h3>
+        <label>
+          <img class="mx-auto rounded-[50%]" src="./images/site-Logo-img.svg" alt="Site logo-img" width="130" height="196">
+          <input class="hidden" type="file">
+        </label>
+        <h4 class="text-[17px] font-bold mt-[18px] text-center font-bold  ">Karthi Madesh</h4>
+        <p class="text-[#FEAF00] font-normal text-[14px] pt-[10px]">Admin</p>
+        <button class="flex mx-auto gap-[15px] justify-items-center bg-[#FEAF00] rounded-[4px] p-[13px] w-[193px]  mt-[63px]">
+          <img class=" pl-[10px] w-[40px]" src="./images/cap-img.svg" alt="cap-img" width="20" height="16">
+          <p class=" pl-[15px]  [14px] text-[#000000]">Students</p>
+          <button  onclick="handleClicklogout()" class=" flex justify-items-center mt-[130px] mx-auto gap-[23px] ">
+             <p class="font-medium text-[14px] leading-[17.07px]">Log out</p>
+             <img src="./images/log out -img.svg" alt="log out img" width="17" height="17">
+          </button>
+        </button>
+      </div>
+    </nav>
+    <form class="createstudent-form w-[72%] h-[100vh] ">
+      <div class="flex items-center justify-between bg-[#F2EAE1] h-[65px]">
+      <a href="#">
+        <img class="pt-[25px] ml-[20px]"src="./images/previous-icon.svg" alt="Previous-icon-img" width="18" height="18">
+      </a>
+        <input class="w-[212px] rounded-[4px] p-[8px] " type="search pr-[20px]"  placeholder="Search...">
+        <img class="m-[20px]" src="./images/bell-img.svg" alt="" width="17" height="20">
+     </div>
+     <div class="flex items-center justify-between border-b-[2px]">
+      <h5 class="text-[22px] leading-[26.82px] font-bold mt-[20px] ml-[30px]">Student</h5> 
+         <button class="font-medium text-[14px] rounded-[4px] bg-[#FEAF00] py-[13px] mb-[11px] px-[25px] mt-[12px] mr-[30px] text-white" type="submit">Save</button>
+     </div>  
+          <div class="flex gap-[10px]">
+            <div class="w-[45%] ">
+            
+                <label class="flex flex-col gap-2 py-[8px] pl-[20px] ">
+                  <span>Name</span>
+                  <input class="py-[8px] pl-[5px] border-[2px] border-slate-500 rounded-md" required autocomplete="off" type="text" placeholder="Name" name="Name">
+                </label> 
+                <label class="flex flex-col gap-2 py-[8px] pl-[20px] ">
+                  <span>Email</span>
+                  <input class="py-[8px] pl-[5px] border-[2px] border-slate-500 rounded-md" required autocomplete="off" type="email" placeholder="Email" name="Email">
+                </label> 
+                <label class="flex flex-col gap-2 py-[8px] pl-[20px] ">
+                  <span>Phone</span>
+                  <input class="py-[8px] pl-[5px] border-[2px] border-slate-500 rounded-md" required autocomplete="off" type="tel" placeholder="Phone" name="Phone">
+                </label> 
+              </div>
+          <div class="w-[45%]">
+  <label class="flex flex-col gap-2 py-[8px] pl-[20px] ">
+    <span>Enroll number</span>
+    <input class="py-[8px] pl-[5px] border-[2px] border-slate-500 rounded-md" required autocomplete="off" type="text" placeholder="Enroll number" name="EnrollNumber">
+  </label> 
+  <label class="flex flex-col gap-2 py-[8px] pl-[20px] ">
+    <span>Data admission</span>
+    <input class="py-[8px] pl-[5px] border-[2px] border-slate-500 rounded-md" required autocomplete="off" type="date" placeholder="Data admission" name="DateAdmission">
+  </label> 
+  <label  class="flex flex-col gap-2 py-[8px] pl-[20px]  ">
+    <span>Avatar-img</span>
+    <input class="change-avatar hidden py-[8px] pl-[5px] border-[2px] border-slate-500 rounded-md" required autocomplete="off" type="file" placeholder="Choose your img" name="AvatarImg">
+    <img class="upload-img" src="./images/" alt="" width="65" height="55">
+  </label> 
+        </div>
+            </div>
+          </form>
+    </div>
+   </div>
+     <script src="./js/createstudent.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+</body>
+</html>
